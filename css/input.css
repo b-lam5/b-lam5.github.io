@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+
+  --color-brand-cream: #FBF9F6;
+  --color-brand-charcoal: #4A4A4A;
+  --color-brand-terracotta: #B88A74;
+  --color-brand-brown: #8A5A44;
+}
+

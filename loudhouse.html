@@ -40,11 +40,11 @@
     {
       "@context": "https://schema.org",
       "@type": ["YogaStudio", "LocalBusiness"],
-      "name": "[Your Name] Yoga",
-      "description": "[Placeholder: Your business description, same as meta description.]",
+      "name": "Loud House Yoga",
+      "description": "Private & Small Group Yoga, in person & online",
       "image": "[Placeholder: A direct URL to your portrait or a good business image.]",
       "url": "[Placeholder: Your full website URL]",
-      "priceRange": "$$", // You can adjust this e.g., $, $$, $$$
+      "priceRange": "$", // You can adjust this e.g., $, $$, $$$
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "[Placeholder: Your City, e.g., 'Perth']",
@@ -170,34 +170,14 @@
       ]
     }
     </script>
-    
-    <!-- Load Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Load Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- Configure Tailwind -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'sans': ['Inter', 'sans-serif'],
-                        'serif': ['Playfair Display', 'serif'],
-                    },
-                    colors: {
-                        'brand-cream': '#FBF9F6', // Warm Off-White
-                        'brand-charcoal': '#4A4A4A', // Dark Charcoal Grey
-                        'brand-terracotta': '#B88A74', // Terracotta
-                        'brand-brown': '#8A5A44', // Muted Brown
-                    }
-                }
-            }
-        }
-    </script>
+      <!-- Load Stylesheet -->
+    <link href="css/main.css" rel="stylesheet">
 </head>
 <body class="bg-brand-cream text-brand-charcoal font-sans antialiased">
 
@@ -212,8 +192,8 @@
             <!-- Desktop Nav -->
             <nav class="hidden md:flex space-x-8">
                 <a href="#about" class="text-brand-charcoal hover:text-brand-terracotta transition-colors">About</a>
-                <a href="#offerings" class="text-brand-charcoal hover:text-brand-terracotta transition-colors">Offerings</a>
-                <a href="#events" class="text-brand-charcoal hover:text-brand-terracotta transition-colors">Events</a>
+                <a href="#offerings" class="text-brand-charcoal hover:text-brand-terracotta transition-colors">Classes</a>
+                <a href="#locations" class="text-brand-charcoal hover:text-brand-terracotta transition-colors">Locations</a>
                 <a href="#contact" class="text-brand-charcoal hover:text-brand-terracotta transition-colors">Contact</a>
             </nav>
 
@@ -235,6 +215,7 @@
         </button>
         <a href="#about" class="mobile-nav-link text-3xl font-serif text-brand-charcoal hover:text-brand-terracotta transition-colors">About</a>
         <a href="#offerings" class="mobile-nav-link text-3xl font-serif text-brand-charcoal hover:text-brand-terracotta transition-colors">Offerings</a>
+        <a href="#locations" class="mobile-nav-link text-3xl font-serif text-brand-charcoal hover:text-brand-terracotta transition-colors">Locations</a>
         <a href="#events" class="mobile-nav-link text-3xl font-serif text-brand-charcoal hover:text-brand-terracotta transition-colors">Events</a>
         <a href="#contact" class="mobile-nav-link text-3xl font-serif text-brand-charcoal hover:text-brand-terracotta transition-colors">Contact</a>
     </div>
@@ -269,7 +250,7 @@
                 <p class="text-lg text-brand-charcoal/90 mb-8 max-w-2xl mx-auto">
                     Let's chat! Take 30-ish minutes with me to discuss your yoga goals, ask questions, and maybe go through a short sequence. No pressure.
                 </p>
-                <a href="#contact" class="inline-block bg-brand-terracotta text-white font-medium py-3 px-8 rounded-full text-lg shadow-md hover:bg-brand-brown transition-colors">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScGM6IjsGUF_1oKKqv62N5eT8VB86FuT78NY3gxkrLDlVWa9A/viewform?usp=publish-editor" class="inline-block bg-brand-terracotta text-white font-medium py-3 px-8 rounded-full text-lg shadow-md hover:bg-brand-brown transition-colors">
                     Book A Free Consultation
                 </a>
             </div>
@@ -286,7 +267,7 @@
                 
                 <div class="max-w-2xl mx-auto text-left md:text-center space-y-4 text-lg text-brand-charcoal/90">
                     <p>
-                        ... and I'm a recently qualified yoga teacher looking for students. My practice is based heavily 
+                        and I'm a recently qualified yoga teacher looking for students. My practice is based heavily 
                         around alignment and breathing - with a strong emphasis on fundamentals and building mobility and ease in everyday movement.
                     </p>
                     <p>
@@ -315,27 +296,28 @@
                         <!-- Pricing Tiers -->
                         <div class="space-y-4 mb-8">
                             <div class="flex justify-between items-center border-b border-gray-200 pb-3">
-                                <span class="text-lg text-brand-charcoal">Single Session (In Person)</span>
-                                <span class="text-xl font-medium text-brand-charcoal">$100</span>
+                                <span class="text-lg text-brand-charcoal">Single 60 Minute Session (<a href="#locations" class="underline hover:text-brand-terracotta transition-colors">In Person</a>)</span>
+                                <span class="text-xl font-medium text-brand-charcoal">$40</span>
                             </div>
                             <div class="flex justify-between items-center border-b border-gray-200 pb-3">
-                                <span class="text-lg text-brand-charcoal">5-Class Pack</span>
-                                <span class="text-xl font-medium text-brand-charcoal">$450</span>
+                                <span class="text-lg text-brand-charcoal">Single 60 Minute Session (Online)</span>
+                                <span class="text-xl font-medium text-brand-charcoal">$30</span>
                             </div>
                             <div class="flex justify-between items-center border-b border-gray-200 pb-3">
-                                <span class="text-lg text-brand-charcoal">10-Class Pack</span>
-                                <span class="text-xl font-medium text-brand-charcoal">$850</span>
+                                <span class="text-lg text-brand-charcoal">5x 60 Minute Session (<a href="#locations" class="underline hover:text-brand-terracotta transition-colors">In Person</a>)</span>
+                                <span class="text-xl font-medium text-brand-charcoal">$175</span>
+                            </div>
+                            <div class="flex justify-between items-center border-b border-gray-200 pb-3">
+                                <span class="text-lg text-brand-charcoal">5x 60 Minute Session (Online)</span>
+                                <span class="text-xl font-medium text-brand-charcoal">$125</span>
                             </div>
                         </div>
                         
                         <!-- Updated Button Group -->
                         <div class="flex flex-col sm:flex-row gap-4">
-                            <a href="#contact" class="inline-block text-center bg-brand-terracotta text-white font-medium py-3 px-6 rounded-full text-base shadow-md hover:bg-brand-brown transition-colors">
-                                Book a Private Session
-                            </a>
-                            <a href="#contact" class="inline-block text-center bg-transparent border-2 border-brand-terracotta text-brand-terracotta font-medium py-3 px-6 rounded-full text-base hover:bg-brand-terracotta hover:text-white transition-colors">
-                                Book Free Consultation
-                            </a>
+                              <a href="https://docs.google.com/forms/d/e/1FAIpQLScGM6IjsGUF_1oKKqv62N5eT8VB86FuT78NY3gxkrLDlVWa9A/viewform?usp=publish-editor" class="inline-block bg-brand-terracotta text-white font-medium py-3 px-8 rounded-full text-lg shadow-md hover:bg-brand-brown transition-colors">
+                    Book A Free Consultation
+                </a>
                         </div>
                     </div>
                     
@@ -343,14 +325,14 @@
                     <div class="bg-transparent p-8 md:p-10 rounded-lg border-2 border-brand-terracotta/50">
                         <h3 class="font-serif text-3xl md:text-4xl font-medium mb-6">Custom Quotes</h3>
                         <p class="text-brand-charcoal/90 mb-6">
-                            Have another idea? I can't offer advanced pose requests (no handstands here, yet) but I'm happy to provide quotes for:
+                            Have another idea? I can't cater to advanced pose requests (no handstands here, yet) but I'm happy to provide quotes for:
                         </p>
                         <ul class="list-disc list-inside text-brand-charcoal/90 space-y-2 mb-8">
                             <li>Client-formed small groups</li>
                             <li>Corporate wellness events</li>
                             <li>Or any other idea you have!</li>
                         </ul>
-                        <a href="#contact" class="inline-block bg-transparent border-2 border-brand-terracotta text-brand-terracotta font-medium py-3 px-6 rounded-full text-base hover:bg-brand-terracotta hover:text-white transition-colors">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd0lQhE4VsUVnPArePpChCudFooCr7nbI4mlExax636Q_zzxw/viewform?usp=publish-editor" class="inline-block bg-transparent border-2 border-brand-terracotta text-brand-terracotta font-medium py-3 px-6 rounded-full text-base hover:bg-brand-terracotta hover:text-white transition-colors">
                             Request a Quote
                         </a>
                     </div>
@@ -361,54 +343,22 @@
                 <div class="mt-16 max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-sm border-l-4 border-brand-terracotta">
                     <h4 class="font-serif text-2xl font-medium text-brand-charcoal mb-3">A Note on My Rates</h4>
                     <p class="text-brand-charcoal/90 text-lg">
-                        Psst... As I'm currently growing my practice, I'm offering special foundational rates. Clients who begin their journey with me now will not only enjoy these introductory prices but will also receive a loyalty discount when my rates are updated in the future. It's my way of saying thank you for being a part of my story!
+                        A small heads up... my current rates are low while I gain teaching experience and I do intend to raise them for sustainability; however, clients who start now and wish to continue will be offered higher, but less than full price, rates at that time.
                     </p>
                 </div>
 
             </div>
         </section>
 
-        <!-- Upcoming Events Section -->
-        <section id="events" class="w-full py-20 md:py-32 bg-white">
-            <div class="container mx-auto max-w-5xl px-4">
-                <h2 class="font-serif text-4xl md:text-5xl font-medium text-center mb-16">Upcoming Events</h2>
-                
-                <!-- Event Card -->
-                <div class="max-w-3xl mx-auto bg-transparent rounded-lg border-2 border-brand-terracotta/50 overflow-hidden md:flex">
-                    <!-- Event Image Placeholder -->
-                    <div class="md:w-1/3">
-                        <img src="https://placehold.co/600x400/FBF9F6/B88A74?text=Yoga+in+the+Park&font=playfair+display" 
-                             alt="People doing yoga in a park" 
-                             class="h-48 w-full object-cover md:h-full"
-                             onerror="this.src='https://placehold.co/600x400/FBF9F6/B88A74?text=Yoga+in+the+Park&font=playfair+display'">
-                    </div>
-                    
-                    <!-- Event Details -->
-                    <div class="md:w-2/3 p-8 md:p-10">
-                        <h3 class="font-serif text-3xl md:text-4xl font-medium mb-4">Free Yoga in the Park</h3>
-                        <div class="space-y-2 text-brand-charcoal/90 mb-6">
-                            <p class="text-lg"><strong>Date:</strong> Saturday, May 30th at 9:00 AM</p>
-                            <p class="text-lg"><strong>Location:</strong> [Placeholder: e.g., Hyde Park (Near the fountain)]</p>
-                            <p class="text-lg"><strong>Cost:</strong> Free!</p>
-                        </div>
-                        <p class="text-lg text-brand-charcoal/90 mb-8">
-                            Join our wonderful community for a free, all-levels vinyasa class in the park. It's the perfect way to start your weekend. Bring your own mat and some water!
-                        </p>
-                        <a href="#" class="inline-block bg-brand-terracotta text-white font-medium py-3 px-6 rounded-full text-base shadow-md hover:bg-brand-brown transition-colors">
-                            Sign Up (Optional)
-                        </a>
-                    </div>
-                </div>
-                <!-- Add more event cards here as needed -->
-            </div>
-        </section>
+
+       
 
         <!-- Mailing List Section -->
-        <section id="mailing-list" class="w-full py-20 md:py-24 bg-brand-terracotta/10">
+        <section id="mailing-list" class="w-full py-20 md:py-24 bg-white">
             <div class="container mx-auto max-w-3xl px-4 text-center">
                 <h2 class="font-serif text-4xl md:text-5xl font-medium mb-6">Join My Mailing List</h2>
                 <p class="text-lg text-brand-charcoal/90 mb-10 max-w-xl mx-auto">
-                    Stay up to date with community events, special offers, and occasional insights on yoga and wellness. No spam, ever.
+                    Keep in touch for news about comunity events, group class offerings, discounts, and other Loud House news (I'm also software engineer). No spam, ever. 
                 </p>
                 
                 <!-- This is a placeholder form. You'll need to integrate this with a service like Mailchimp, ConvertKit, etc. -->
@@ -425,22 +375,84 @@
             </div>
         </section>
 
+        <!-- In Person Locations Section -->
+        <section id="locations" class="w-full py-20 md:py-32 bg-brand-terracotta/10">
+            <div class="container mx-auto max-w-5xl px-4">
+                <h2 class="font-serif text-4xl md:text-5xl font-medium text-center mb-16">In Person Locations</h2>
+                <p class="text-lg text-brand-charcoal/90 mb-12 text-center max-w-3xl mx-auto">
+                    I offer in-person, private 1-on-1 sessions at your home or a suitable location within approximately 15 minutes' drive from Joondalup, WA. This includes, but is not limited to, the following suburbs:
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 max-w-4xl mx-auto">
+                    <!-- North -->
+                    <div>
+                        <h3 class="font-serif text-2xl font-medium mb-4 border-b-2 border-brand-terracotta/50 pb-2">North</h3>
+                        <ul class="space-y-2 text-brand-charcoal/90 text-lg">
+                            <li>Kinross</li>
+                            <li>Burns Beach</li>
+                            <li>Iluka</li>
+                            <li>Clarkson</li>
+                            <li>Mindarie</li>
+                            <li>Merriwa</li>
+                            <li>Ridgewood</li>
+                            <li>Quinns Rocks</li>
+                            <li>Butler</li>
+                            <li>Jindalee</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- South -->
+                    <div>
+                        <h3 class="font-serif text-2xl font-medium mb-4 border-b-2 border-brand-terracotta/50 pb-2">South</h3>
+                        <ul class="space-y-2 text-brand-charcoal/90 text-lg">
+                            <li>Beldon</li>
+                            <li>Mullaloo</li>
+                            <li>Ocean Reef</li>
+                            <li>Craigie</li>
+                            <li>Woodvale</li>
+                            <li>Padbury</li>
+                            <li>Kingsley</li>
+                            <li>Hillarys</li>
+                            <li>Kallaroo</li>
+                            <li>Duncraig</li>
+                            <li>Greenwood</li>
+                            <li>Warwick</li>
+                            <li>Sorrento</li>
+                            <li>Marmion</li>
+                        </ul>
+                    </div>
+
+                    <!-- East -->
+                    <div>
+                        <h3 class="font-serif text-2xl font-medium mb-4 border-b-2 border-brand-terracotta/50 pb-2">East</h3>
+                        <ul class="space-y-2 text-brand-charcoal/90 text-lg">
+                            <li>Wanneroo</li>
+                            <li>Ashby</li>
+                            <li>Tapping</li>
+                            <li>Carramar</li>
+                            <li>Sinagra</li>
+                            <li>Banksia Grove</li>
+                            <li>Hocking</li>
+                            <li>Pearsall</li>
+                            <li>Wangara</li>
+                        </ul>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+
         <!-- Contact / CTA Section -->
         <section id="contact" class="w-full py-20 md:py-32 bg-brand-cream">
             <div class="container mx-auto max-w-3xl px-4 text-center">
                 <h2 class="font-serif text-4xl md:text-5xl font-medium mb-6">Let's Connect</h2>
                 <p class="text-lg text-brand-charcoal/90 mb-10 max-w-xl mx-auto">
-                    Have a question or ready to get a quote for a private session or free consultation? I'd love to hear from you.
+                    Have a question? I'd love to hear from you.
                 </p>
                 
                 <div class="flex flex-col sm:flex-row justify-center gap-4">
-                    <!-- These would link to your forms -->
-                    <a href="#" class="inline-block bg-brand-terracotta text-white font-medium py-3 px-8 rounded-full text-lg shadow-md hover:bg-brand-brown transition-colors">
-                        Request a Quote
-                    </a>
-                    <a href="#" class="inline-block bg-transparent border-2 border-brand-terracotta text-brand-terracotta font-medium py-3 px-8 rounded-full text-lg hover:bg-brand-terracotta hover:text-white transition-colors">
-                        Ask a Question
-                    </a>
+                   <span class="font-serif text-2xl font-medium mb-4 border-b-2 border-brand-terracotta/50 pb-2">bonnie@loudhouse.au</span>
+                    
                 </div>
             </div>
         </section>
@@ -451,7 +463,7 @@
     <footer class="w-full py-12 px-4">
         <div class="container mx-auto max-w-6xl text-center">
             <p class="text-brand-charcoal/70">
-                &copy; <span id="current-year"></span> [Your Name] Yoga. All rights reserved.
+                &copy; <span id="current-year"></span> Loud House. All rights reserved.
             </p>
         </div>
     </footer>
