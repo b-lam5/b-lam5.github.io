@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WQHT9D57V3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WQHT9D57V3');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -13,23 +22,11 @@
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="[Placeholder: A brief 1-2 sentence description of your private yoga business, highlighting your unique approach and services.]">
-    <meta name="keywords" content="[Placeholder: e.g., yoga teacher, private yoga, yoga [your city], vinyasa, restorative yoga, [your name]]">
-    <link rel="canonical" href="[Placeholder: Your full website URL, e.g., https://www.youryogasite.com]">
+    <meta name="description" content="Private Yoga Tuition, Perth & Online">
+    <meta name="keywords" content="yoga teacher, yoga, hatha, meditation, loud house, bonnie lampard">
+    <link rel="canonical" href="https://www.yoga.loudhouse.au">
 
-    <!-- Open Graph / Facebook / LinkedIn Meta Tags -->
-    <meta property="og:title" content="Private Yoga Teacher [Your Name] | [Your City]">
-    <meta property="og:description" content="[Placeholder: A brief 1-2 sentence description.]">
-    <meta property="og:image" content="[Placeholder: A direct URL to a high-quality image, e.g., your portrait or hero image. Should be at least 1200x630px.]">
-    <meta property="og:url" content="https://www.yoga.loudhouse.au">
-    <meta property="og:type" content="website">
-
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Private Yoga Teacher [Your Name] | [Your City]">
-    <meta name="twitter:description" content="[Placeholder: A brief 1-2 sentence description.]">
-    <meta name="twitter:image" content="[Placeholder: A direct URL to the same high-quality image.]">
-
+    
     <!-- 
       ======================================================================
       STRUCTURED DATA (SCHEMA.ORG)
@@ -42,9 +39,9 @@
       "@type": ["YogaStudio", "LocalBusiness"],
       "name": "Loud House Yoga",
       "description": "Private & Small Group Yoga, in person & online",
-      "image": "[Placeholder: A direct URL to your portrait or a good business image.]",
+      "image": "",
       "url": "[Placeholder: Your full website URL]",
-      "priceRange": "$", // You can adjust this e.g., $, $$, $$$
+      "priceRange": "$",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "[Placeholder: Your City, e.g., 'Perth']",
@@ -52,31 +49,30 @@
         "postalCode": "[Placeholder: Your Postcode]",
         "addressCountry": "[Placeholder: Your Country, e.g., 'AU']"
       },
-      "telephone": "[Placeholder: Your business phone number, if you have one]",
       "makesOffer": [
         {
           "@type": "Offer",
-          "name": "Free 30-Minute Consultation",
+          "name": "Free 30-Minute Consultation & Lesson",
           "itemOffered": {
             "@type": "Service",
-            "name": "Free 30-Minute Consultation"
+            "name": "Free 30-Minute Consultation & Lesson"
           },
           "priceSpecification": {
             "@type": "PriceSpecification",
             "price": "0",
             "priceCurrency": "AUD"
           },
-          "description": "Book a free 30-minute consultation to discuss your goals and see if we're a good fit."
+          "description": "Book a free 30-minute consultation to see if we're a good fit."
         },
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Private 1-on-1 Yoga Session (Single)"
+            "name": "60 Minute 1-on-1 Yoga Session (Online)"
           },
           "priceSpecification": {
             "@type": "PriceSpecification",
-            "price": "100",
+            "price": "30",
             "priceCurrency": "AUD" 
           }
         },
@@ -84,11 +80,15 @@
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "5-Class Pack (Private 1-on-1)"
+            "name": "60 Minute 1-on-1 Yoga Session (In Person)",
+            "areaServed": {
+                "@type": "AdministrativeArea",
+                "name": "Perth"
+            }
           },
           "priceSpecification": {
             "@type": "PriceSpecification",
-            "price": "450",
+            "price": "40",
             "priceCurrency": "AUD"
           }
         },
@@ -96,11 +96,11 @@
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "10-Class Pack (Private 1-on-1)"
+            "name": "75 Minute 1-on-1 Yoga Session (Online)"
           },
           "priceSpecification": {
             "@type": "PriceSpecification",
-            "price": "850",
+            "price": "38",
             "priceCurrency": "AUD"
           }
         },
@@ -108,66 +108,45 @@
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Custom Yoga Sessions (Small Groups, Corporate, Workshops)"
+            "name": "75 Minute 1-on-1 Yoga Session (In Person)",
+            "areaServed": {
+                "@type": "AdministrativeArea",
+                "name": "Perth"
+            }
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "price": "48",
+            "priceCurrency": "AUD"
           }
         }
       ],
       "potentialAction": [
         {
-          "@type": "QuoteAction",
+          "@type": "ScheduleAction",
+          "name": "Book a Free Consultation",
           "target": {
             "@type": "EntryPoint",
-            "urlTemplate": "[Placeholder: Your full URL to the quote form/contact page, e.g., https://www.youryogasite.com#contact]"
-          },
-          "name": "Request a Quote"
-        },
-        {
-          "@type": "CommunicateAction",
-          "target": {
-            "@type": "EntryPoint",
-            "urlTemplate": "[Placeholder: Your full URL to the contact form/page, e.g., https://www.youryogasite.com#contact]",
+            "urlTemplate": "https://docs.google.com/forms/d/e/1FAIpQLScGM6IjsGUF_1oKKqv62N5eT8VB86FuT78NY3gxkrLDlVWa9A/viewform?usp=publish-editor",
             "actionPlatform": [
               "https://schema.org/DesktopWebPlatform",
               "https://schema.org/MobileWebPlatform"
             ]
-          },
-          "name": "Ask a Question"
-        }
-      ],
-      "event": [
+          }
+        },
         {
-          "@type": "Event",
-          "name": "Free Yoga in the Park",
-          "startDate": "[Placeholder: e.g., 2026-05-30T09:00-08:00]",
-          "endDate": "[Placeholder: e.g., 2026-05-30T10:00-08:00]",
-          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-          "eventStatus": "https://schema.org/EventScheduled",
-          "location": {
-            "@type": "Place",
-            "name": "[Placeholder: e.g., Hyde Park]",
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "[Placeholder: Your City, e.g., 'Perth']",
-              "addressRegion": "[Placeholder: Your State/Region, e.g., 'WA']",
-              "postalCode": "[Placeholder: Your Postcode]",
-              "addressCountry": "[Placeholder: Your Country, e.g., 'AU']"
-            }
-          },
-          "image": "[Placeholder: A direct URL to an image for this event]",
-          "description": "A free, community-focused yoga class open to all levels. A perfect chance to practice in nature and meet our community.",
-          "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "AUD",
-            "availability": "https://schema.org/InStock",
-            "url": "[Placeholder: Your full URL to the event page or sign-up, e.g., https://www.youryogasite.com#events]"
-          },
-          "organizer": {
-            "@type": "Person",
-            "name": "[Your Name]"
+          "@type": "ScheduleAction",
+          "name": "Book a Class",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://www.picktime.com/home/loudhouseyoga",
+            "actionPlatform": [
+              "https://schema.org/DesktopWebPlatform",
+              "https://schema.org/MobileWebPlatform"
+            ]
           }
         }
-      ]
+      ]   
     }
     </script>
 
@@ -235,10 +214,13 @@
 
             <div class="container mx-auto max-w-3xl relative z-10">
                 <p class="font-serif text-5xl md:text-7xl font-medium text-brand-charcoal mb-10">
-                    Personalized Yoga for Every Body.
+                    Your Practice, Your Pace.
                 </p>
                 <a href="#offerings" class="inline-block bg-brand-terracotta text-white font-medium py-3 px-8 rounded-full text-lg shadow-md hover:bg-brand-brown transition-colors">
-                    See Classes
+                    See Sessions
+                </a>
+                 <a href="https://www.picktime.com/home/loudhouseyoga" class="inline-block bg-transparent border-2 border-brand-terracotta text-brand-terracotta font-medium py-3 px-6 rounded-full text-base hover:bg-brand-terracotta hover:text-white transition-colors">
+                            Book a Session
                 </a>
             </div>
         </section>
@@ -253,6 +235,7 @@
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLScGM6IjsGUF_1oKKqv62N5eT8VB86FuT78NY3gxkrLDlVWa9A/viewform?usp=publish-editor" class="inline-block bg-brand-terracotta text-white font-medium py-3 px-8 rounded-full text-lg shadow-md hover:bg-brand-brown transition-colors">
                     Book A Free Consultation
                 </a>
+               
             </div>
         </section>
 
@@ -265,13 +248,14 @@
                      class="w-48 h-48 md:w-60 md:h-60 rounded-full mx-auto mb-8 object-cover shadow-lg"
                      onerror="this.src='https://placehold.co/300/B88A74/FBF9F6?text=Warm+Portrait&font=playfair+display'">
                 
-                <div class="max-w-2xl mx-auto text-left md:text-center space-y-4 text-lg text-brand-charcoal/90">
+                <div class="max-w-2xl mx-auto text-left text-pretty space-y-4 text-lg text-brand-charcoal/90">
                     <p>
                         and I'm a recently qualified yoga teacher looking for students. My practice is based heavily 
-                        around alignment and breathing - with a strong emphasis on fundamentals and building mobility and ease in everyday movement.
+                        around alignment and breathing - with a strong emphasis on fundamentals and building mobility and ease in everyday movement.  
                     </p>
                     <p>
-                        I'm here to create personalized, accessible practices that meet you exactly where you are, helping you build strength, find balance, and reconnect with yourself. 
+                        I'm here to create personalized practices that draw from Hatha, Vinyasa, Pranayama, and meditation to build strength and find balance. These sessions 
+                        should help you build a strong foundation for your home or studio practice, or keep you accountable with personalised attention. 
                     </p>
                 </div>
             </div>
@@ -296,20 +280,20 @@
                         <!-- Pricing Tiers -->
                         <div class="space-y-4 mb-8">
                             <div class="flex justify-between items-center border-b border-gray-200 pb-3">
-                                <span class="text-lg text-brand-charcoal">Single 60 Minute Session (<a href="#locations" class="underline hover:text-brand-terracotta transition-colors">In Person</a>)</span>
+                                <span class="text-lg text-brand-charcoal">60 Minute Session (<a href="#locations" class="underline hover:text-brand-terracotta transition-colors">In Person</a>)</span>
                                 <span class="text-xl font-medium text-brand-charcoal">$40</span>
                             </div>
                             <div class="flex justify-between items-center border-b border-gray-200 pb-3">
-                                <span class="text-lg text-brand-charcoal">Single 60 Minute Session (Online)</span>
+                                <span class="text-lg text-brand-charcoal">60 Minute Session (Online)</span>
                                 <span class="text-xl font-medium text-brand-charcoal">$30</span>
                             </div>
                             <div class="flex justify-between items-center border-b border-gray-200 pb-3">
-                                <span class="text-lg text-brand-charcoal">5x 60 Minute Session (<a href="#locations" class="underline hover:text-brand-terracotta transition-colors">In Person</a>)</span>
-                                <span class="text-xl font-medium text-brand-charcoal">$175</span>
+                                <span class="text-lg text-brand-charcoal">75 Minute Session (<a href="#locations" class="underline hover:text-brand-terracotta transition-colors">In Person</a>)</span>
+                                <span class="text-xl font-medium text-brand-charcoal">$48</span>
                             </div>
                             <div class="flex justify-between items-center border-b border-gray-200 pb-3">
-                                <span class="text-lg text-brand-charcoal">5x 60 Minute Session (Online)</span>
-                                <span class="text-xl font-medium text-brand-charcoal">$125</span>
+                                <span class="text-lg text-brand-charcoal">75 Minute Session (Online)</span>
+                                <span class="text-xl font-medium text-brand-charcoal">$38</span>
                             </div>
                         </div>
                         
@@ -317,6 +301,9 @@
                         <div class="flex flex-col sm:flex-row gap-4">
                               <a href="https://docs.google.com/forms/d/e/1FAIpQLScGM6IjsGUF_1oKKqv62N5eT8VB86FuT78NY3gxkrLDlVWa9A/viewform?usp=publish-editor" class="inline-block bg-brand-terracotta text-white font-medium py-3 px-8 rounded-full text-lg shadow-md hover:bg-brand-brown transition-colors">
                     Book A Free Consultation
+                </a>
+                 <a href="https://www.picktime.com/home/loudhouseyoga" class="inline-block bg-transparent border-2 border-brand-terracotta text-brand-terracotta font-medium py-3 px-6 rounded-full text-base hover:bg-brand-terracotta hover:text-white transition-colors">
+                            Book a Session
                 </a>
                         </div>
                     </div>
@@ -342,7 +329,7 @@
                 <!-- Founder's Rate Note -->
                 <div class="mt-16 max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-sm border-l-4 border-brand-terracotta">
                     <h4 class="font-serif text-2xl font-medium text-brand-charcoal mb-3">A Note on My Rates</h4>
-                    <p class="text-brand-charcoal/90 text-lg">
+                    <p class="text-brand-charcoal/90 text-lg text-pretty">
                         A small heads up: my current rates are low while I gain teaching experience, and I do intend to raise them for sustainability; however, clients who start now and wish to continue will be offered higher, but less than full price, rates at that time.
                     </p>
                 </div>
@@ -355,19 +342,19 @@
 
         <!-- Mailing List Section -->
         <section id="mailing-list" class="w-full py-20 md:py-24 bg-white">
-            <div class="container mx-auto max-w-3xl px-4 text-center">
+            <div class="container mx-auto max-w-3xl px-4 text-pretty text-center">
                 <h2 class="font-serif text-4xl md:text-5xl font-medium mb-6">Join My Mailing List</h2>
-                <p class="text-lg text-brand-charcoal/90 mb-10 max-w-xl mx-auto">
+                <p class="text-lg text-brand-charcoal/90 mb-10 max-w-xl mx-auto ">
                     Keep in touch for news about comunity events, group class offerings, discounts, and other Loud House news (I'm also software engineer). No spam, ever. 
                 </p>
                 
                 <!-- This is a placeholder form. You'll need to integrate this with a service like Mailchimp, ConvertKit, etc. -->
-                <form action="#" method="POST" class="max-w-md mx-auto flex flex-col sm:flex-row gap-4">
-                    <label for="email" class="sr-only">Email Address</label>
-                    <input type="email" name="email" id="email" required 
+                <form id="mailing-list-form" class="max-w-md mx-auto flex flex-col sm:flex-row gap-4">
+                    <label for="mailingList" class="sr-only">Email Address</label>
+                    <input type="email" name="email" id="mailingList" required 
                            class="w-full px-5 py-3 rounded-full border border-gray-300 text-brand-charcoal placeholder-brand-charcoal/50 focus:outline-none focus:ring-2 focus:ring-brand-terracotta"
                            placeholder="Enter your email address...">
-                    <button type="submit" 
+                    <button type="submit" id="subscribe-button"
                             class="flex-shrink-0 bg-brand-terracotta text-white font-medium py-3 px-8 rounded-full text-lg shadow-md hover:bg-brand-brown transition-colors sm:w-auto w-full">
                         Subscribe
                     </button>
@@ -379,7 +366,7 @@
         <section id="locations" class="w-full py-20 md:py-32 bg-brand-terracotta/10">
             <div class="container mx-auto max-w-5xl px-4">
                 <h2 class="font-serif text-4xl md:text-5xl font-medium text-center mb-16">In Person Locations</h2>
-                <p class="text-lg text-brand-charcoal/90 mb-12 text-center max-w-3xl mx-auto">
+                <p class="text-lg text-brand-charcoal/90 mb-12 text-left md:text-center text-pretty max-w-3xl mx-auto">
                     I offer in-person, private 1-on-1 sessions at your home or a suitable location within approximately 15 minutes' drive from Joondalup, WA. This includes, but is not limited to, the following suburbs:
                 </p>
 
@@ -495,8 +482,25 @@
 
             // Set current year in footer
             document.getElementById('current-year').textContent = new Date().getFullYear();
+
+            // Mailing list form submission
+            const mailingListForm = document.getElementById('mailing-list-form');
+            const subscribeButton = document.getElementById('subscribe-button');
+            const mailingListInput = document.getElementById('mailingList'); // Get reference to the input field
+
+            mailingListForm.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                subscribeButton.disabled = true; // Disable button on submit
+                try {
+                    await sendToGoogleSheet();
+                    mailingListInput.value = ''; // Clear the input field on success
+                } finally {
+                    subscribeButton.disabled = false; // Re-enable button after completion
+                }
+            });
         });
     </script>
+    <script src="js/toSheets.js" defer></script>
 
 </body>
 </html>

@@ -567,6 +567,9 @@
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
   }
+  .text-pretty {
+    text-wrap: pretty;
+  }
   .text-brand-charcoal {
     color: var(--color-brand-charcoal);
   }
@@ -736,11 +739,6 @@
   .md\:py-32 {
     @media (width >= 48rem) {
       padding-block: calc(var(--spacing) * 32);
-    }
-  }
-  .md\:text-center {
-    @media (width >= 48rem) {
-      text-align: center;
     }
   }
   .md\:text-4xl {
