@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yoga.loudhouse.au/sitemap.xml
